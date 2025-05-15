@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <img src = "images/대한민국해병대.png" width = "20%">
+    <img src = "images/대한민국해병대.png" width = "40%">
     <h1> 자랑스러운 대한민국 해병대를 소개합니다!</h1>
     <h2> </h2>
 </body>

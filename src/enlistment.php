@@ -4,6 +4,6 @@
 </head>
 
 <body>
-    <img src = "images/오도봉고.jpg" width = "20%">
+    <img src = "images/오도봉고.jpg" width = "30%">
     <h1> 자진입대를 환영한다 아쎄이</h1>
 </body>
