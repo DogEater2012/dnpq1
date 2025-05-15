@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>해병대 모병</title>
+    <title>해병대 모병합니다</title>
     <meta charset="UTF-8">
 </head>
 
