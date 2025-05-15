@@ -1,18 +1,28 @@
 <!doctype html>
 <html>
 <head>
-    <title>해병대 모병합니다</title>
+    <title>해병대 자진입대</title>
     <meta charset="UTF-8">
 </head>
 
 <body>
     
 
-    <p style = "margin-top:100px;"> <h1>해병대 모집</h1> </p>
-    <a href = "https://gall.dcinside.com/board/lists/?id=bitcoins_new1" target = "_blank" title = "marine gallary">Visit bitcoin gallary!</a>
-    <img src = "images/mumochill.jpg" width = "20%">
-    <p>hello<strong> my <u>ASSEY!</u> </strong> </p>
-    <input type = "button">
-    <p style = "margin-top:45px;"> Seki... Guiyeol!!!!!!!!!!!!!!!!!</p>
+    <h1>해병대 모집</h1>
+    <a href = "enlistment.php" target = "_blank" title = "자진입대 신청">자진입대</a>
+    <a href = "login.php" target = "_blank" title = "로그인">로그인</a>
+    <a href = "promotion.php" target = "_blank" title = "해병대 홍보">해병대홍보</a>
+    <a href = "notice.php" target = "_blank" title = "공지">공지</a>
+    <a href = "community.php" target = "_blank" title = "해병놀이터">해병놀이터</a>
+    <a href = "complain.php" target = "_blank" title = "마음의 편지">마음의편지</a>
+
+    <img src = "images/해병대로고.png" width = "20%">
+
+
+
+
+
+
+
 </body>
 </html>
