@@ -6,11 +6,11 @@
 <body>
     <img src = "images/해병성채.png" width = "30%">
     <h1>어서와라 아쎄이!</h1>
-    <?php $str = "라이라이 라차차";
-        echo $str;
-    ?>
-    <?php echo $_GET['name'] ;
-    ?>
-    <?php echo strlen($_GET['name']);
-    ?>
+    <form action = "process_login.php", method = "POST">
+    <p><label>username</label><input type = "text" name=  "username" placeholder = "username"></p>
+    <p><label>password</label><input type = "password" name=  "password" placeholder = "password"></p>
+    <p><input type = "submit" value = "환영한다 아쎄이"></p>
+
+
+    </form>
 </body>

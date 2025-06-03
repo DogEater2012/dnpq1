@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+    
     <body>
     <h1> test mysql</h1>
         <?php 
@@ -13,6 +14,8 @@
         values ('$username', '$password', '$sex')
         ";
         $result = mysqli_query($conn, $sql);
+        
+        
         if($result ==true) {
             echo "<script>alert('후회하지 않으시겠습니까?')</script>";
         }
