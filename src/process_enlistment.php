@@ -16,8 +16,7 @@
         if($result ==true) {
             echo "<script>alert('후회하지 않으시겠습니까?')</script>";
         }
-        echo $sql;
-        mysqli_query($conn, $sql);
+        
      
         ?>
 
