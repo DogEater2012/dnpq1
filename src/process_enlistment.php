@@ -4,11 +4,18 @@
     <h1> test mysql</h1>
         <?php 
         $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
-        $sql = " 
-        SELECT userinfo FROM exampledb;
-        
-        ";
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $sex = $_POST['sex'];
 
+        $sql = " 
+        INSERT into userinfo (username, password, sex)
+        values ('$username', '$password', '$sex')
+        ";
+        $result = mysqli_query($conn, $sql);
+        if($result ==true) {
+            echo "<script>alert('후회하지 않으시겠습니까?')</script>";
+        }
         echo $sql;
         mysqli_query($conn, $sql);
      
