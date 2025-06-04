@@ -28,9 +28,10 @@
             echo "<h1>제목: ".$_POST['title']."</h1>";
             echo "<h2>작성자: ".$_POST['writter']."</h2>";
             echo "<p>본문: ".$_POST['description']."</p>";
-
+            
             echo "<p>신고를 당한 게시물입니까? -> ".$clame."</p>";
             echo "<p><form action = 'edit.php' method = 'POST'><input type = hidden name = 'id' value = '".$_POST['id']."' ><input type = hidden name = 'writter' value = '".$_POST['writter']."' ><input type = submit value = 수정 ></form></p>";
+            echo "<p><form action = 'process_article_delete.php' method = 'POST'><input type = hidden name = 'id' value = '".$_POST['id']."' ><input type = hidden name = 'writter' value = '".$_POST['writter']."' ><input type = submit value = 삭제 ></form></p>";
             echo "<p><br><br><br><br>혹시 이 글을 읽고 불쾌하셨나요? 괜찮다면 신고하시겠습니까? <form action = 'process_ban.php' method = 'POST'><input type = hidden name = 'id' value = '".$_POST['id']."' ><input type = hidden name = 'writter' value = '".$_POST['writter']."' ><input type = submit value = 네 ></form></p>";
         ?>
         
