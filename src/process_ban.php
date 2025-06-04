@@ -14,8 +14,7 @@
         
         $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
         $article_id = $_POST['id'];
-        $sql1 = "
-        UPDATE article set is_clame = 1 WHERE id = $article_id";
+        $sql1 = "UPDATE article set is_clame = '1' WHERE id = '$article_id'";
        
 
         $result = mysqli_query($conn, $sql1);

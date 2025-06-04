@@ -29,7 +29,7 @@
         $i = 0;
         echo "<ol>";
         while($article = mysqli_fetch_assoc($result)){
-            echo "<li>".$article['title']." 작성자 ".$article['user_name']."<form action = 'show_article.php' method = 'POST'><input type = 'hidden' name = 'id' value = '". $article['id'] ."'><input type = 'hidden' name = 'title' value = '" . $article['title'] ."'><input type = 'hidden' name = 'description' value = '" . $article['description'] . "'><input type = 'hidden' name = 'writter' value = '" . $article['user_name'] . "'><input type = 'submit' value = '보기'></form></li>";
+            echo "<li>".$article['title']." 작성자 ".$article['user_name']."<form action = 'show_article.php' method = 'POST'><input type = 'hidden' name = 'id' value = '". $article['id'] ."'><input type = 'hidden' name = 'title' value = '" . $article['title'] ."'><input type = 'hidden' name = 'is_clame' value = '" . $article['is_clame'] ."'><input type = 'hidden' name = 'description' value = '" . $article['description'] . "'><input type = 'hidden' name = 'writter' value = '" . $article['user_name'] . "'><input type = 'submit' value = '보기'></form></li>";
         }
         echo "</ol>";
     ?>
