@@ -3,6 +3,7 @@
     if(isset($_SESSION['username'])){
         echo "<script>alert('로그아웃을 하고 회원가입을 해라 아쎄이!!!!!');</script>";
        echo "<script> location.href = 'index.php'; </script>";
+       exit();
     }
 ?>
 <!doctype html>
