@@ -1,6 +1,15 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html>
 <head>
+    <?php
+        
+        if(isset($_SESSION['username'])){
+            echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!";
+        }
+    ?>
     <meta charset="UTF-8">
     <title>해병대 자진입대</title>
     

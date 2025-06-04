@@ -15,7 +15,9 @@
         ";
         $result = mysqli_query($conn, $sql);
         
-        
+        if($result ==false) {
+            echo "다시가입해라 아쎄이!";
+        }
         if($result ==true) {
             echo "<script>alert('후회하지 않으시겠습니까?')</script>";
         }
