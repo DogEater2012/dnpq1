@@ -8,6 +8,12 @@
 </head>
 
 <body>
+    <?php        
+        if(isset($_SESSION['username'])){
+            echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!<br>";
+            
+        }
+    ?>
     <img src = "images/황근출눈빛.png" width = "20%">
     <h1> 아쎄이 주목!!!!!!!!!!</h1>
     <?php

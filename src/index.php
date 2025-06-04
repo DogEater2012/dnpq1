@@ -13,7 +13,8 @@
 <body>
     <?php        
         if(isset($_SESSION['username'])){
-            echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!";
+            echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!<br>";
+            
         }
     ?>
     

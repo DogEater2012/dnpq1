@@ -1,18 +1,17 @@
 <?php
     session_start();
-    if(isset($_SESSION['username'])){
-        echo "<script>alert('로그아웃을 하고 회원가입을 해라 아쎄이!!!!!');</script>";
-       echo "<script> location.href = 'index.php'; </script>";
+    if(!isset($_SESSION['username'])){
+        echo "<script>alert('로그인을 하고 회원탈퇴를 해라 아쎄이!!!!!');</script>";
+       echo "<script> location.href = 'login.php'; </script>";
        exit();
     }
 ?>
 <!doctype html>
 <html>
     <head>
-
-    <meta charset = "UTF-8">
-    <title>회원가입</title>
-</head>
+        <meta charset="UTF-8">
+    </head>
+    
     <body>
     <h1> test mysql</h1>
         <?php 
@@ -30,7 +29,6 @@
         
         if($result ==true) {
             echo "<script>alert('후회하지 않으시겠습니까?')</script>";
-            echo "<script>location.href = 'index.php'</script>";
         }
         
      
