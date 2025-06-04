@@ -17,12 +17,18 @@
 
 <body>
     
-    <>
+    
     <h1>해병대 모집</h1> 
     <img src = "images/해병대로고.png" width = "20%">
     <br>
     <a href = "enlistment.php" target = "_blank" title = "자진입대 신청">자진입대</a>
+    <?php
+        if(isset($_SESSION['username'])){
+            echo "<a href = \"logout.php\" target = \"self\" title = \"로그아웃\">로그아웃</a>";
+        }
+    ?>
     <a href = "login.php" target = "self" title = "로그인">로그인</a>
+
     <a href = "promotion.php" target = "_blank" title = "해병대 홍보">해병대홍보</a>
     <a href = "notice.php" target = "_blank" title = "공지">공지</a>
     <a href = "community.php" target = "_blank" title = "해병놀이터">해병놀이터</a>
