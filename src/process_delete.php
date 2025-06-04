@@ -15,20 +15,18 @@
     <body>
     <h1> test mysql</h1>
         <?php 
-        $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $sex = $_POST['sex'];
+        $username = $_SESSION['username'];
 
-        $sql = " 
-        INSERT into userinfo (username, password, sex)
-        values ('$username', '$password', '$sex')
-        ";
+        $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
+        
+        mysqli_query($conn, "DELETE FROM article WHERE user_name = '$username'");
+        
+
+        $sql = "DELETE FROM userinfo WHERE username = '$username'";
         $result = mysqli_query($conn, $sql);
         
-        
-        if($result ==true) {
-            echo "<script>alert('탈퇴가 완료되었습니다')</script>";
+        if($result) {
+            echo "<script>alert('너의 흔적은 몽땅 제거되었다 아쎄이!!!!!!!!!!'); location.href = 'logout.php';</script>";
         }
         
      

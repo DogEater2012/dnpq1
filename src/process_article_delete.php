@@ -24,7 +24,7 @@
         $result = mysqli_query($conn, $chsql);
         if($result){
             echo"<script>alert('삭제성공이다 아쎄이!'); location.href = 'community.php';</script>";
-        }
+        } 
         ?>
     </body>
 
