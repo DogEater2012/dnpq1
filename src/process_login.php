@@ -26,10 +26,11 @@
            
             $_SESSION['passwd'] = $password;
             $_SESSION['username'] = $username;
-            echo "<a  href = \"index.php\" target = \"_blank\" title = \"메인페이지\">메인페이지</a>";
+            echo "<a  href = \"index.php\" target = \"_self\" title = \"메인페이지\">메인페이지</a>";
         }
         else{
             echo "다시 로그인해라 아쎄이!";
+            echo "<a href = \"login.php\" target = \"self\" title = \"로그인\">로그인</a>";
         }
      
         ?>
