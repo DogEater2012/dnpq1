@@ -15,15 +15,15 @@
         $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
         $username = $_POST['username'];
         $password = $_POST['password'];
-
+        
         $sql = " 
         SELECT * FROM userinfo where username = \"$username\" and password = \"$password\"
         ";
         
         $result = mysqli_query($conn, $sql);
         $user = mysqli_fetch_assoc($result);
-        $is_banned = $user['is_banned'];
-        if($is_banned){
+        
+        if($user['is_banned']){
             echo "<script>alert('넌 정지다 아쎄이!!!!!!!');</script>";
             echo "<script> location.href = 'index.php'; </script>";
             exit();

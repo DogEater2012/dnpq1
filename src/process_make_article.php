@@ -1,5 +1,6 @@
 <?php
     session_start();
+   
 ?>
 <!doctype html>
 <html>
@@ -14,10 +15,10 @@
         $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
         $title = $_POST['title'];
         $description = $_POST['description'];
-        $username = $_SESSION['username'];
+        $user_name = $_SESSION['username'];
         $sql = " 
-        INSERT INTO article (title, description, username)
-        values ('$title', '$description', '$username')
+        INSERT INTO article (title, description, user_name)
+        values ('$title', '$description', '$user_name')
         ";
 
         $result = mysqli_query($conn, $sql);

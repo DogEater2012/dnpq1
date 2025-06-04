@@ -23,8 +23,7 @@
 
         <form action = "process_make_article.php", method = "POST">
             <p><label>title</label><input type = "text" name=  "title" placeholder = "제목"></p>
-            <p><label>description</label><textarea name=  "description" placeholder = "desc" >
-            </textarea></p>
+            <p><label>description</label><textarea name=  "description" placeholder = "desc" ></textarea></p>
             <p><input type = "submit" value = "제출"></p>
         </form>
     </body>
