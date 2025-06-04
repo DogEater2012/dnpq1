@@ -21,7 +21,14 @@
         ";
         
         $result = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($result) >0) {
+        $user = mysqli_fetch_assoc($result);
+        $is_banned = $user['is_banned'];
+        if($is_banned){
+            echo "<script>alert('넌 정지다 아쎄이!!!!!!!');</script>";
+            echo "<script> location.href = 'index.php'; </script>";
+            exit();
+        }
+        if($user) {
             echo "로그인성공이다 아쎄이! 맘껏 놀아라!";
            
             $_SESSION['passwd'] = $password;

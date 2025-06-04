@@ -27,7 +27,6 @@
             </textarea></p>
             <p><input type = "submit" value = "제출"></p>
         </form>
-
     </body>
 
 </html>
