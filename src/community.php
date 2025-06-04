@@ -19,5 +19,18 @@
     <h2>이곳은 해병들의 쉼터입니다.</h2>
     <br>
     <p><a href = "make_article.php">글쓰기</a></p>
-    
+    <?php
+        $conn = mysqli_connect("assignment_template-db-1", "exampleuser", "examplepass", "exampledb");
+        $sql = " 
+        SELECT * FROM article
+        ";
+        
+        $result = mysqli_query($conn, $sql);
+        $i = 0;
+        echo "<ol>";
+        while($article = mysqli_fetch_assoc($result)){
+            echo "<li>".$article['title']." 작성자 ".$article['user_name']."<form action = 'show_article.php' method = 'POST'><input type = 'hidden' name = 'id' value = '". $article['id'] ."'><input type = 'hidden' name = 'title' value = '" . $article['title'] ."'><input type = 'hidden' name = 'description' value = '" . $article['description'] . "'><input type = 'hidden' name = 'writter' value = '" . $article['user_name'] . "'><input type = 'submit' value = '보기'></form></li>";
+        }
+        echo "</ol>";
+    ?>
 </body>

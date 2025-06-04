@@ -22,8 +22,12 @@
         ";
 
         $result = mysqli_query($conn, $sql);
-        if($result){echo "<script>alert('글이 등록되었다 아쎄이!');</script>";}
-        else{echo "<script>alert('뭔가 잘못됐다 아쎄이!!');</script>";}
+        if($result){
+            echo "<script>alert('글이 등록되었다 아쎄이!'); location.href = 'community.php'; </script>
+            
+            ";
+        }
+        else{echo "<script>alert('뭔가 잘못됐다 아쎄이!!');location.href = 'community.php'</script>";}
         ?>
 
 </body> 
