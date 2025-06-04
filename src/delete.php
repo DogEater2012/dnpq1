@@ -23,6 +23,5 @@
     <form aciton = 'process_delete.php' method = "POST">
         <label>당신은 부끄럽지도 않습니까? 아래 버튼을 누르면 탈퇴가 완료됩니다ㅉ</label>
         <p><input type = "submit" name = "jinba" value = "저는 전우를 버리고 도망가는 찐빠중의 찐빠, 오도찐빠해병입니다!!!!"></p>
-        
     </form>
 </body>

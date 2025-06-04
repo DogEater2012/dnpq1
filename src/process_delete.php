@@ -28,7 +28,7 @@
         
         
         if($result ==true) {
-            echo "<script>alert('후회하지 않으시겠습니까?')</script>";
+            echo "<script>alert('탈퇴가 완료되었습니다')</script>";
         }
         
      

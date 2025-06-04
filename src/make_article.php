@@ -19,6 +19,7 @@
         if(isset($_SESSION['username'])){
             echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!<br>";
         }
+
         ?>
 
         <form action = "process_make_article.php", method = "POST">
