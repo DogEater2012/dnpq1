@@ -25,7 +25,7 @@
         
         if($user['is_banned']){
             echo "<script>alert('넌 정지다 아쎄이!!!!!!!');</script>";
-            echo "<script> location.href = 'index.php'; </script>";
+            echo "<script> location.href = 'logout.php'; </script>";
             exit();
         }
         if($user) {
