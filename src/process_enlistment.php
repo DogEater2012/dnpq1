@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['username'])){
+        echo "<script>alert('로그아웃을 하고 회원가입을 해라 아쎄이!!!!!');</script>";
+       echo "<script> location.href = 'index.php'; </script>";
+    }
+?>
 <!doctype html>
 <html>
     
@@ -15,9 +22,7 @@
         ";
         $result = mysqli_query($conn, $sql);
         
-        if($result ==false) {
-            echo "다시가입해라 아쎄이!";
-        }
+        
         if($result ==true) {
             echo "<script>alert('후회하지 않으시겠습니까?')</script>";
         }
