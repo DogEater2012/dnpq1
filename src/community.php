@@ -12,12 +12,12 @@
     <?php        
         if(isset($_SESSION['username'])){
             echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!<br>";
-            
         }
     ?>
     <img src = "images/놀이터.jpg" width = "40%">
     <h1> 해병놀이터</h1>
     <h2>이곳은 해병들의 쉼터입니다.</h2>
     <br>
-    <f>
+    <p><a href = "make_article.php">글쓰기</a></p>
+    
 </body>
