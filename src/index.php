@@ -4,19 +4,18 @@
 <!doctype html>
 <html>
 <head>
-    <?php
-        
-        if(isset($_SESSION['username'])){
-            echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!";
-        }
-    ?>
+    
     <meta charset="UTF-8">
     <title>해병대 자진입대</title>
     
 </head>
 
 <body>
-    
+    <?php        
+        if(isset($_SESSION['username'])){
+            echo "반갑다!". $_SESSION['username']."아쎄이!!!!!!!";
+        }
+    ?>
     
     <h1>해병대 모집</h1> 
     <img src = "images/해병대로고.png" width = "20%">

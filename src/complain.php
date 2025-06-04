@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
-    <title> 마음의 편지 </title>
+    <meta charset = "UTF-8">
+    <title> 마음의 편지</title>
 </head>
 
 <body>

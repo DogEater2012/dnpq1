@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <head>
     <title> 로그인 </title>
@@ -10,7 +13,5 @@
     <p><label>username</label><input type = "text" name=  "username" placeholder = "username"></p>
     <p><label>password</label><input type = "password" name=  "password" placeholder = "password"></p>
     <p><input type = "submit" value = "환영한다 아쎄이"></p>
-
-
     </form>
 </body>

@@ -1,7 +1,8 @@
 
 <!doctype html>
 <head>
-    <title>해병탈퇴</title>
+    <meta charset = "UTF-8">
+    <title> 해병탈퇴 </title>
 </head>
 
 <body>

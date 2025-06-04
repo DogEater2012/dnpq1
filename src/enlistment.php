@@ -3,7 +3,6 @@
 <head>
     <meta charset = "UTF-8">
     <title> 자진입대 신청 </title>
-
 </head>
 
 <body>

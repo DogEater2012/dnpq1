@@ -1,5 +1,6 @@
 <!doctype html>
 <head>
+    <meta charset="UTF-8">
     <title> 해병대 홍보 </title>
 </head>
 

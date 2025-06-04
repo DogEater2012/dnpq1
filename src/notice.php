@@ -1,5 +1,9 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <head>
+    <meta charset = "UTF-8">
     <title> 공지 </title>
 </head>
 
