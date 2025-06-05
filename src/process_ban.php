@@ -21,12 +21,14 @@
         $result3 = mysqli_query($conn, $select);
         $result2 = mysqli_query($conn, $sql2);
         $result1 = mysqli_query($conn, $sql1);
-        $user = mysqli_fetch_assoc($result3);
+        $user_ban = mysqli_fetch_assoc($result3);
         
-        if($user){
-            $sql3 = "UPDATE userinfo set is_banned = 1 WHERE username = '".$_POST['writter']."' ";
-            mysqli_query($conn, $sql3);
-        }
+        if($user_ban['warning'] >2){
+                     $sql3 = "UPDATE userinfo set is_banned = 1 WHERE username = '".$_POST['writter']."' ";
+                  mysqli_query($conn, $sql3);
+             }
+
+    
 
             echo "<script>alert('신고가 완료되었다 아쎄이!'); location.href = 'community.php'; </script>
             ";
