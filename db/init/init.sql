@@ -1,4 +1,4 @@
-use exampledb;
+ USE exampledb;
 
 CREATE TABLE userinfo(
     username varchar(20) not null PRIMARY KEY,
