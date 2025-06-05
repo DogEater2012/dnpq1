@@ -28,6 +28,11 @@
             echo "<script> location.href = 'logout.php'; </script>";
             exit();
         }
+        if(!isset($user)){
+            echo "<script>alert('넌 해병이 아니다 아쎄이!! 회원가입을 요망한다!!!!!!!');</script>";
+            echo "<script> location.href = 'logout.php'; </script>";
+            exit();
+        }
         if($user) {
             echo "로그인성공이다 아쎄이! 맘껏 놀아라!";
            
